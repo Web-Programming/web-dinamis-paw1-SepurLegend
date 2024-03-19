@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(253, 254, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full {
+    width: 90%; 
+    max-width: 1000px;
+    min-height: 100px;
+    background-color: rgb(245, 239, 231);
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+.left{
+    color:rgb(225, 15, 201);
+    background-color: rgba(69, 92, 5, 0.474);
+    padding: 20px;
+}
+.right {
+    color:aqua;
+	background-color: rgb(10, 10, 10);
+    padding: 20px;
+}
+
+.image, .title, .Summary, .Experience, .Education, .skill {
+    margin-bottom: 30px;
+}
+.Language{
+    color: rgb(55, 21, 138);
+}
+.Hobbies{
+    color:rgb(55, 21, 138);
+}
+.aboutMe{
+    font-family:monospace;
+}
+.name{
+    text-align: center;
+    color:rgb(192, 6, 6);
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Contact{
+    font-family:'Trebuchet MS';
+    color:rgb(223, 252, 4);
+}
+    
+.h2 {
+    background-color: rgb(4, 96, 150);
+}
+hr {
+    border:double;
+    height: 30px;
+    color: #080808; 
+    background-color: #dd0e0e;
+}
+
+
+@media (min-width: 768px) {
+    .full {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .full {
+        grid-template-columns: 2fr 4fr;
+    }
+}
